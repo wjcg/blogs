@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <title>Mi blog de musica</title>
+  </head>
+  <body>
+    <div class="contenedor">
+
+      <!--Encabezado-->
+      <header>
+        <div class="row">
+          <div class="col-sm-3 col-12 text-center">
+            <img class="logo-img rounded-circle" src="img/logo.png"/>
+          </div>
+          <div class="col-sm-3 offset-sm-6 col-12 text-center">
+            <div class="redes-sociales">
+              <img src="img/fb.png" class="rounded-circle img-social">
+              <img src="img/ig.png" class="rounded-circle img-social">
+              <img src="img/tt.png" class="rounded-circle img-social">
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--Barra de navegacion-->
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-sm nav-fill">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Artista</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Grupos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Top 10</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Letras</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Acordes</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!--Contenido-->
+      <div class="container-fluid contenido">
+        <div class="row">
+          <div class="col-md-9 col-12">
+            <!--Articulo 1-->
+            <div class="row articulo">
+              <div class="col-md-8 col-12">
+                <h2 class="text-center">The Midnight</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia vestibulum dui, nec tempor est lacinia in. Curabitur egestas, est a faucibus convallis, nunc ligula consequat lorem, pellentesque malesuada enim orci non tortor. Quisque quam diam, vestibulum in congue vitae, suscipit vel justo. Praesent dignissim, est a cursus posuere, ipsum eros porttitor massa, non commodo mauris ligula in metus. Sed commodo, elit sit amet sollicitudin sodales, turpis ante tempus lacus, accumsan rutrum dolor orci vel nulla.
+                </p>
+              </div>
+              <div class="col-md-4 col-12">
+                <img class="img-articulo" src="img/album.jpg" alt="">
+              </div>
+
+              <div class="row comentarios">
+                <div class="col-2">
+                  <img src="img/anonimo.png" class="img-comentarios"/>
+                </div>
+                <div class="col-10">
+                  <form action="index.html" method="post">
+                    <div class="form-group">
+
+                      <textarea name="comentario" rows="3" cols="80" class="form-control" placeholder="Comentar..." style="resize:none"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <input type="button" name="boton" value="Enviar">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!--<form class="comentarios" action="index.html" method="post">
+                <div class="form-group">
+                  <img src="img/anonimo.png" alt="">
+                  <textarea name="comentario" rows="3" cols="80" class="form-control" placeholder="Comentar..." style="resize:none"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="button" name="boton" value="Comentar">
+                </div>
+              </form>-->
+            </div>
+
+            <!--ARTICULO 2-->
+            <br>
+            <div class="row articulo">
+              <div class="col-md-8 col-12 order-md-2">
+                <h2 class="text-center">El Sythwave</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia vestibulum dui, nec tempor est lacinia in. Curabitur egestas, est a faucibus convallis, nunc ligula consequat lorem, pellentesque malesuada enim orci non tortor. Quisque quam diam, vestibulum in congue vitae, suscipit vel justo. Praesent dignissim, est a cursus posuere, ipsum eros porttitor massa, non commodo mauris ligula in metus. Sed commodo, elit sit amet sollicitudin sodales, turpis ante tempus lacus, accumsan rutrum dolor orci vel nulla.
+                </p>
+              </div>
+
+              <div class="col-md-4 col-12 order-md-1">
+                <img class="img-articulo" src="img/historia.jpg" alt="">
+              </div>
+
+              <div class="row comentarios order-md-2">
+                <div class="col-2">
+                  <img src="img/anonimo.png" class="img-comentarios"/>
+                </div>
+                <div class="col-10">
+                  <form action="index.html" method="post">
+                    <div class="form-group">
+                      <textarea name="comentario" rows="3" cols="80" class="form-control" placeholder="Comentar..." style="resize:none"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <input type="button" name="boton" value="Enviar">
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <!-- usar  d-none d-md-block en vez de esconder-->
+          <div class="col-md-3 esconder">
+            <form class="buscador" action="index.html" method="post">
+              <div class="form-group">
+                <input type="text" name="buscar" value="" class="form-control" placeholder="Buscar...">
+              </div>
+              <div class="list-group buscador-resultados">
+                <a class="list-group-item list-group-item-action" href="#">Carpenter Brut</a>
+                <a class="list-group-item list-group-item-action" href="#">The Aviators</a>
+                <a class="list-group-item list-group-item-action" href="#">Power Glove</a>
+                <a class="list-group-item list-group-item-action" href="#">Danger</a>
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

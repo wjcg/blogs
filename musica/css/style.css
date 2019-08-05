@@ -1,0 +1,160 @@
+body{
+  background: black;
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position : top;
+  background-attachment: fixed;
+  /*background-size: cover;*/
+}
+
+.contenedor{
+  width: 100%;
+}
+
+header{
+  padding: 10px;
+}
+
+.logo-img{
+  width: 100px;
+}
+
+.redes-sociales{
+  margin-top: 30px;
+}
+
+.img-social{
+  width: 44px;
+}
+
+nav{
+  background: rgba(255, 84, 203, 1);
+  width: 100%;
+  padding: 0.4em 0.6em !important;
+  border-radius: 5px;
+}
+
+nav ul{
+  width: 100%;
+  color: white;
+}
+
+nav ul li{
+  padding: 2px;
+}
+
+.nav-item a{
+  /*color: rgba(0, 60, 152, 1);
+  background: rgba(0, 183, 191, 1);*/
+
+  color: rgba(0, 183, 191, 1);
+  background: rgba(0, 60, 152, 1);
+
+}
+
+.nav-item a:hover{
+  color: white;
+}
+
+
+.contenido{
+  /*Colocar imagens*/
+  padding-top: 10px;
+}
+
+.articulo{
+  color: rgba(0, 183, 191, 0.8);
+  background-color: rgba(0, 60, 152, 0.8);
+  border: rgba(255, 84, 203, 1) solid 3px;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.img-articulo{
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.comentarios{
+  margin: auto;
+}
+
+.img-comentarios{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.buscador{
+  width: 100%;
+}
+
+.buscador .form-group{
+  margin-bottom: 0;
+}
+
+.esconder{
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .esconder{
+    display: none;
+  }
+
+  .contenedor{
+    width: 95%;
+    margin: auto;
+  }
+
+  /*abreviar texto en articulo*/
+  /*.img-articulo{
+    width: 150px;
+  }*/
+}
+
+
+
+
+@media (min-width: 768px) {
+  .contenido{
+    padding-top: 1%;
+  }
+
+  .esconder{
+    display: inherit;
+  }
+
+  .contenedor{
+    width: 90%;
+    margin: auto;
+  }
+
+  /*abreviar texto en articulo*/
+  /*.img-articulo{
+    width: 200px;
+  }*/
+}
+
+
+@media (min-width: 992px) {
+
+
+  .contenedor{
+    width: 80%;
+    margin: auto;
+  }
+
+  /*
+  .img-articulo{
+    width: 200px;
+  }*/
+}
+
+
+/*
+.ejemplo{
+  color: rgba(0, 183, 191, 1);  azul
+  color: rgba(0, 60, 152, 1); azul oscuro
+  color: rgba(255, 84, 203, 1); fucsia
+}
+*/
